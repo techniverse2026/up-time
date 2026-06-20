@@ -38,14 +38,20 @@
       "ok": true,
       "status": 200,
       "ms": 669
+    },
+    {
+      "t": "2026-06-20T18:34:55.687Z",
+      "ok": true,
+      "status": 200,
+      "ms": 511
     }
   ],
   "daily": [
     {
       "date": "2026-06-20",
-      "up": 6,
-      "total": 6,
-      "avgMs": 666.5
+      "up": 7,
+      "total": 7,
+      "avgMs": 644.29
     }
   ],
   "incidents": []
