@@ -1,0 +1,11 @@
+{
+  "$schema": "Add sites here. id is optional (auto-derived from url if omitted). expectedStatus is optional (defaults to treating any 2xx/3xx as up).",
+  "sites": [
+    {
+      "id": "lokeshworsaccos",
+      "name": "Lokeshwor SACCOS",
+      "url": "https://lokeshworsaccos.com.np",
+      "expectedStatus": 200
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-06-20T02:49:31.348Z",
+  "sites": [
+    {
+      "id": "lokeshworsaccos",
+      "name": "Lokeshwor SACCOS",
+      "url": "https://lokeshworsaccos.com.np",
+      "status": "up",
+      "httpStatus": 200,
+      "responseTime": 669,
+      "lastChecked": "2026-06-20T02:49:31.348Z",
+      "uptime": {
+        "24h": 100,
+        "7d": 100,
+        "30d": 100
+      },
+      "lastError": null,
+      "ongoingIncidentSince": null
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+name: Monitor sites
+
+# Runs the checker on a schedule, then commits the updated JSON "database"
+# back into the repo. The dashboard reads those files.
+
+on:
+  schedule:
+    # Every 5 minutes. GitHub cron is not exact (can drift a few minutes,
+    # and 5 min is the floor) — that's fine for uptime monitoring.
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {} # allow manual runs from the Actions tab
+
+# Allow the workflow to push commits back to the repo.
+permissions:
+  contents: write
+
+# Don't let overlapping/late runs stomp on each other.
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run checker
+        # Optional alerting — uncomment and add the secret to enable.
+        # env:
+        #   ALERTS_ENABLED: "true"
+        #   ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: npm run check
+
+      - name: Commit results
+        run: |
+          git config user.name "uptime-bot"
+          git config user.email "actions@github.com"
+          git add public/data
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            # No [skip ci] here: this push intentionally triggers the Pages
+            # deploy so the dashboard reflects the latest data.
+            git commit -m "chore(data): update status"
+            # Rebase onto any commits that landed during the run, then push.
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            git push
+          fi
