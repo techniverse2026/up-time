@@ -122,6 +122,12 @@
       "ok": false,
       "status": 415,
       "ms": 680
+    },
+    {
+      "t": "2026-06-27T12:16:26.423Z",
+      "ok": true,
+      "status": 200,
+      "ms": 724
     }
   ],
   "daily": [
@@ -169,16 +175,16 @@
     },
     {
       "date": "2026-06-27",
-      "up": 0,
-      "total": 1,
-      "avgMs": 680
+      "up": 1,
+      "total": 2,
+      "avgMs": 702
     }
   ],
   "incidents": [
     {
       "start": "2026-06-27T08:09:48.702Z",
-      "end": null,
-      "durationMs": null
+      "end": "2026-06-27T12:16:26.423Z",
+      "durationMs": 14797721
     },
     {
       "start": "2026-06-25T17:37:28.626Z",
