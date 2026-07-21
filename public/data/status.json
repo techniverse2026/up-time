@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-07-21T03:37:33.033Z",
+  "generatedAt": "2026-07-21T06:14:19.453Z",
   "sites": [
     {
       "id": "lokeshworsaccos",
       "name": "Lokeshwor SACCOS",
       "url": "https://lokeshworsaccos.com.np",
-      "status": "up",
-      "httpStatus": 200,
-      "responseTime": 386,
-      "lastChecked": "2026-07-21T03:37:33.033Z",
+      "status": "down",
+      "httpStatus": 415,
+      "responseTime": 366,
+      "lastChecked": "2026-07-21T06:14:19.453Z",
       "uptime": {
-        "24h": 100,
-        "7d": 100,
-        "30d": 87.9
+        "24h": 91.67,
+        "7d": 97.67,
+        "30d": 87.2
       },
-      "lastError": null,
-      "ongoingIncidentSince": null
+      "lastError": "Unexpected status 415",
+      "ongoingIncidentSince": "2026-07-21T06:14:19.453Z"
     }
   ]
 }
