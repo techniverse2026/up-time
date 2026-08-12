@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T22:23:11.145Z",
+  "generatedAt": "2026-08-12T23:06:25.205Z",
   "sites": [
     {
       "id": "lokeshworsaccos",
@@ -7,12 +7,12 @@
       "url": "https://lokeshworsaccos.com.np",
       "status": "up",
       "httpStatus": 200,
-      "responseTime": 480,
-      "lastChecked": "2026-08-12T22:23:11.145Z",
+      "responseTime": 644,
+      "lastChecked": "2026-08-12T23:06:25.205Z",
       "uptime": {
         "24h": 100,
         "7d": 100,
-        "30d": 99.11
+        "30d": 99.12
       },
       "lastError": null,
       "ongoingIncidentSince": null
