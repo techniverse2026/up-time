@@ -4,12 +4,6 @@
   "url": "https://lokeshworsaccos.com.np",
   "checks": [
     {
-      "t": "2026-09-16T01:34:10.982Z",
-      "ok": true,
-      "status": 200,
-      "ms": 1290
-    },
-    {
       "t": "2026-09-16T06:38:02.369Z",
       "ok": true,
       "status": 200,
@@ -290,15 +284,15 @@
       "ok": true,
       "status": 200,
       "ms": 1152
+    },
+    {
+      "t": "2026-09-23T01:44:24.724Z",
+      "ok": true,
+      "status": 200,
+      "ms": 1345
     }
   ],
   "daily": [
-    {
-      "date": "2026-06-24",
-      "up": 3,
-      "total": 3,
-      "avgMs": 526.33
-    },
     {
       "date": "2026-06-25",
       "up": 2,
@@ -838,6 +832,12 @@
       "up": 7,
       "total": 7,
       "avgMs": 1166
+    },
+    {
+      "date": "2026-09-23",
+      "up": 1,
+      "total": 1,
+      "avgMs": 1345
     }
   ],
   "incidents": [
